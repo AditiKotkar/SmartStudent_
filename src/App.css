@@ -1,0 +1,222 @@
+ .root {
+    width: 430px;
+    height: 1124px;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
+    align-items: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 14px;
+  align-items: center;
+  width: 430px;
+}
+.navbar {
+  position: fixed;
+  width: 50%;
+  z-index: 999;
+  padding: 30px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+}
+.menu-btn {
+  position: relative;
+  color: #111;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+  padding-top: 16px;
+  margin-left: 20px;
+  display: block;
+  z-index: 999;
+  }
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+  .navbar .menu {
+    position: fixed;
+    display: cover;
+    height: 683px;
+    left: -100%;
+    top: 137px;
+    border: 1px solid rgba(217,217,217,0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20000000298023224);
+    padding-top: 20px;
+    background: #ffffff;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu.active {
+    left: 0;
+  }
+  .navbar .menu li {
+    overflow: hidden;
+  }
+.navbar .max-width {
+  margin-top: 20px;
+}
+  .menu-btn .active:before {
+    margin-top:135px;
+    margin-right:0px;
+    display: cover;
+  }
+  .navbar .menu li a {
+    padding: 2px;
+    display: inline-block;
+    margin: 15px;
+    font-size: 16px;
+    color: black;
+    font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+  'Liberation Sans', sans-serif;
+  }
+  .menu{
+    padding: 65px;
+    margin: 2px 100px 0px 3px;
+  }
+  .menu li a:hover {
+    border-radius: 2px;
+    background-color: #9EC0F9;
+  } 
+
+
+.content {
+  width: 430px;
+  height: 1124px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+}
+.bgimg {
+  width: 409px;
+  height: 156px;
+  background: url("./images/Design.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 4px;
+  left: 3px;
+  overflow: hidden;
+}
+.img-1 {
+  width: 69px;
+  height: 65px;
+  background: url("./images/v121_162.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 48px;
+  left: 60px;
+  border-radius: 50px;
+}
+.Name span {
+  color: rgba(255,255,255,1);
+  font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+  'Liberation Sans', sans-serif;
+  font-weight: SemiBold;
+  text-align: center;
+  position: absolute;
+  opacity: 1;
+}
+.hiSaiChudhari {
+  width: 180px;
+  top: 27px;
+  font-size: 20px;
+  left: 151px;
+}
+.rollNumber1 {
+  width: 133px;
+  top: 66px;
+  left: 154px;
+  font-size: 14px;
+}
+.class12Std {
+  width: 118px;
+  top: 96px;
+  left: 151px;
+  font-size: 14px;
+}
+/*  */
+.con {
+  max-width: 95rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+.contener {
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  width: 187px;
+  height: 175px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  border: 1px solid rgba(217,217,217,0.5);
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20000000298023224);
+  overflow: hidden;
+  display: flex;
+  top: 180px;
+  transition: all 0.2s;
+  padding: 1.5rem;
+  margin: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.contener:hover {
+  transform: scale(1.05);
+  background-color: #9EC0F9;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.19), 0 16px 16px rgba(0, 0, 0, 0.23);
+}
+.contener h1 {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  color: #000;
+  margin:1px;
+  font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+  'Liberation Sans', sans-serif;
+  letter-spacing: -0.3px;
+  /* font-weight: Medium; */
+  font-size: 16px;
+  opacity: 1;
+  flex-direction: column;
+  align-items: center;
+  word-wrap: break-word;
+}
+.img {
+  position: relative;
+  width: 100%;
+  height: 99px;
+  max-width: 6rem;
+  max-height: 100%;
+  border-radius: 0.5rem;
+  margin-top: 1px;
+}
+
+.page-content{
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+.page-content p{
+  margin: 0;
+}
+.page-content.visible{
+  display: block;
+}
